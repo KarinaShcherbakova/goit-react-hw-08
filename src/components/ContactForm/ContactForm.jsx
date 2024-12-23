@@ -1,14 +1,18 @@
 import { useState } from 'react';
-import PropTypes from 'prop-types';
-import styles from './ContactForm.module.css'; 
+import { useDispatch } from 'react-redux';
+import { addContact } from '../../redux/contacts/operations';
+import toast from 'react-hot-toast';
+import styles from './ContactForm.module.css';
 
-const ContactForm = ({ onSubmit }) => {
+const ContactForm = () => {
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
+  const dispatch = useDispatch();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    onSubmit({ name, number });
+    dispatch(addContact({ name, number }));
+    toast.success('Contact added successfully!');
     setName('');
     setNumber('');
   };
@@ -22,7 +26,7 @@ const ContactForm = ({ onSubmit }) => {
         value={name}
         onChange={(e) => setName(e.target.value)}
         required
-        className={styles.input} 
+        className={styles.input}
       />
       <input
         type="text"
@@ -30,15 +34,14 @@ const ContactForm = ({ onSubmit }) => {
         value={number}
         onChange={(e) => setNumber(e.target.value)}
         required
-        className={styles.input} 
+        className={styles.input}
       />
       <button type="submit" className={styles.button}>Add contact</button>
     </form>
   );
 };
 
-ContactForm.propTypes = {
-  onSubmit: PropTypes.func.isRequired,
-};
-
 export default ContactForm;
+
+
+

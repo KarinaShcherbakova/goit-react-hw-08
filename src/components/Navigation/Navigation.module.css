@@ -10,9 +10,11 @@
   background-color: #9c4dcc; 
   color: white; 
   text-decoration: none; 
-  border-radius: 8px; 
+  border-radius: 4px; 
   text-transform: none; 
   transition: background-color 0.3s ease, transform 0.2s ease; 
+  box-sizing: border-box;
+  height: auto; 
 }
 
 .linkButton:hover {

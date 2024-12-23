@@ -5,16 +5,19 @@
 }
 
 .logoutButton {
+  display: inline-block; 
+  padding: 10px 20px; 
   background-color: #9c4dcc;
   color: white; 
-  padding: 10px 20px;
-  width: 100%; 
-  border-radius: 8px; 
+  border-radius: 4px; 
   text-transform: none; 
   transition: background-color 0.3s ease; 
   border: none; 
   font-size: 1.1rem;
   cursor: pointer;
+  line-height: 1;
+  box-sizing: border-box;
+  height: auto; 
 }
 
 .logoutButton:hover {
@@ -50,7 +53,7 @@
 @media (min-width: 1200px) {
 
   .logoutButton {
-      padding: 12px 24px; 
+      padding: 16px 32px; 
       font-size: 1.1rem; 
   }
 }

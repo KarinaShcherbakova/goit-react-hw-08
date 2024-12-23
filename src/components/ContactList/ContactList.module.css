@@ -16,11 +16,11 @@
   padding-left: 0;
   margin: 0; 
   width: 100%; 
-  display: flex; 
-  flex-direction: column; 
-  gap: 10px; 
 }
 
+.contactList li:not(:last-child) {
+  margin-bottom: 10px;
+}
 .contactItem {
   display: flex;
   justify-content: space-between;
