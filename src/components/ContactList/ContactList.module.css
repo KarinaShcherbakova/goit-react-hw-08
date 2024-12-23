@@ -1,0 +1,115 @@
+.contactList {
+  background-color: #f3e5f5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px; 
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  overflow: hidden; 
+}
+
+.contactList ul {
+  list-style-type: none; 
+  padding-left: 0;
+  margin: 0; 
+  width: 100%; 
+  display: flex; 
+  flex-direction: column; 
+  gap: 10px; 
+}
+
+.contactItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  width: 100%; 
+  max-width: 700px; 
+  box-sizing: border-box; 
+}
+
+.contactInfo {
+  font-size: 1rem;
+  color: #5e2a8c; 
+}
+
+.contactActions button {
+  background-color: #9c4dcc; 
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.contactActions button:hover {
+  background-color: #7b1fa2; 
+}
+
+.noContactsMessage {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #9c4dcc; 
+}
+
+@media screen and (max-width: 600px) {
+  .contactList {
+      padding: 15px; 
+      max-width: 100%; 
+  }
+
+  .contactItem {
+      padding: 10px; 
+      flex-direction: column; 
+      gap: 10px; 
+  }
+
+  .contactActions button {
+      width: 100%; 
+      margin-left: 0; 
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contactList {
+      padding: 20px;
+      max-width: 90%; 
+  }
+
+  .contactItem {
+      padding: 12px; 
+  }
+
+  .contactActions button {
+      font-size: 0.85rem; 
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contactList {
+      padding: 30px; 
+      max-width: 1000px;
+  }
+
+  .contactItem {
+      padding: 20px;
+  }
+
+  .contactInfo {
+      font-size: 1.2rem;
+  }
+
+  .contactActions button {
+      padding: 10px 20px; 
+      font-size: 1rem; 
+  }
+}

@@ -1,0 +1,94 @@
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; 
+}
+
+.dialogTitle {
+  color: #6a1b9a; 
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.dialogContent {
+  background-color: #f3e5f5; 
+  color: #5e2a8c; 
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  width: 100%;
+  max-width: 500px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cancelButton {
+  background-color: #d32f2f; 
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-transform: none;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+
+.cancelButton:hover {
+  background-color: #b71c1c; 
+}
+
+.confirmButton {
+  background-color: #9c4dcc;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-transform: none;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+
+.confirmButton:hover {
+  background-color: #7b1fa2; 
+}
+
+@media (max-width: 600px) {
+  .dialogContent {
+      padding: 15px; 
+      font-size: 1rem; 
+      border-radius: 6px; 
+      max-width: 90%; 
+  }
+
+  .cancelButton, .confirmButton {
+      padding: 6px 12px; 
+      font-size: 0.9rem; 
+  }
+}
+
+@media (max-width: 768px) {
+  .dialogContent {
+      padding: 18px; 
+      font-size: 1.05rem; 
+      border-radius: 7px; 
+      max-width: 80%; 
+  }
+
+  .cancelButton, .confirmButton {
+      padding: 8px 14px; 
+      font-size: 0.95rem; 
+  }
+}
+
+@media (min-width: 1200px) {
+  .dialogContent {
+      padding: 25px; 
+      font-size: 1.2rem; 
+      border-radius: 10px; 
+      max-width: 600px; 
+  }
+
+  .cancelButton, .confirmButton {
+      padding: 10px 20px;
+      font-size: 1rem; 
+  }
+}

@@ -1,0 +1,94 @@
+.container {
+  padding: 20px;
+  background-color: #f3e5f5; 
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  font-size: 3rem;
+  color: #7b1fa2; 
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.welcomeMessage {
+  font-size: 1.5rem;
+  color: #4a148c; 
+  margin-bottom: 30px;
+}
+
+.loading {
+  font-size: 1.2rem;
+  color: #7b1fa2;
+  text-align: center;
+}
+
+.pageContainer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 600px) {
+  .container {
+      padding: 10px; 
+  }
+
+  .header {
+      font-size: 2rem; 
+  }
+
+  .welcomeMessage {
+      font-size: 1.2rem; 
+  }
+
+  .pageContainer {
+      padding: 15px; 
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+      padding: 15px; 
+  }
+
+  .header {
+      font-size: 2.5rem; 
+  }
+
+  .welcomeMessage {
+      font-size: 1.3rem;
+  }
+
+  .pageContainer {
+      padding: 18px; 
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .container {
+      padding: 50px; 
+  }
+
+  .header {
+      font-size: 3.5rem; 
+  }
+
+  .welcomeMessage {
+      font-size: 1.7rem;
+  }
+
+  .pageContainer {
+      padding: 25px; 
+  }
+
+}

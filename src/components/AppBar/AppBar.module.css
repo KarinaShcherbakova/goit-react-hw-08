@@ -1,0 +1,119 @@
+.header {
+    background-color: #7b1fa2; 
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navContainer {
+    display: flex;
+    align-items: center; 
+    gap: 20px;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .header {
+      padding: 10px 40px; 
+    }
+  
+    .logo {
+      font-size: 1.8rem; 
+    }
+  
+    .navContainer {
+      gap: 25px; 
+    }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .header {
+      padding: 10px 30px; 
+    }
+  
+    .logo {
+      font-size: 1.6rem; 
+    }
+  
+    .navContainer {
+      gap: 30px; 
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .header {
+      padding: 10px 15px; 
+      flex-direction: column; 
+      align-items: flex-start; 
+      text-align: left; 
+    }
+  
+    .logo {
+      font-size: 1.4rem; 
+      margin-bottom: 10px; 
+    }
+  
+    .navContainer {
+      width: 100%; 
+      flex-direction: column; 
+      align-items: flex-start; 
+      gap: 15px; 
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .header {
+      padding: 8px 12px; 
+      flex-direction: column; 
+      align-items: flex-start; 
+      text-align: left; 
+    }
+  
+    .logo {
+      font-size: 1.3rem;
+      margin-bottom: 8px;
+    }
+  
+    .navContainer {
+      width: 100%; 
+      flex-direction: column; 
+      align-items: flex-start; 
+      gap: 10px; 
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .header {
+      padding: 8px 20px; 
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .logo {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+  
+    .navContainer {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 1.2rem; 
+    }
+  
+    .navContainer {
+      gap: 8px; 
+    }
+  }

@@ -1,0 +1,122 @@
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f3e5f5; 
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.formTitle {
+  text-align: center;
+  color: #6a1b9a; 
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 10px; 
+  font-size: 1rem; 
+  border: 1px solid #ccc;
+  width: 100%; 
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.saveButton {
+  background-color: #7b1fa2; 
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.saveButton:hover {
+  background-color: #9c4dcc; 
+}
+
+.cancelButton {
+  background-color: #e1bee7; 
+  color: #6a1b9a; 
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.cancelButton:hover {
+  background-color: #ce93d8;
+}
+
+@media screen and (max-width: 600px) {
+  .formContainer {
+      padding: 15px; 
+      max-width: 100%; 
+      border-radius: 8px; 
+  }
+
+  .input {
+      font-size: 0.9rem; 
+      padding: 8px; 
+  }
+
+  .buttonContainer {
+      flex-direction: column; 
+      gap: 15px; 
+  }
+
+  .saveButton,
+  .cancelButton {
+      width: 100%; 
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .formContainer {
+      padding: 18px;
+      max-width: 90%;
+  }
+
+  .input {
+      font-size: 1rem; 
+  }
+
+  .buttonContainer {
+      gap: 12px; 
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .formContainer {
+      padding: 30px; 
+      max-width: 600px; 
+  }
+
+  .input {
+      font-size: 1.1rem; 
+      padding: 12px; 
+  }
+
+  .saveButton,
+  .cancelButton {
+      padding: 12px 25px; 
+      font-size: 1rem;
+  }
+}
