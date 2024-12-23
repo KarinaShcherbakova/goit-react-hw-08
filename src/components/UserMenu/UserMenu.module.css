@@ -6,7 +6,7 @@
 
 .logoutButton {
   display: inline-block; 
-  padding: 10px 20px; 
+  padding: 12px 24px; 
   background-color: #9c4dcc;
   color: white; 
   border-radius: 4px; 
@@ -37,7 +37,7 @@
 @media (max-width: 600px) {
  
   .logoutButton {
-      padding: 8px 16px; 
+      padding: 10px 20px; 
       font-size: 1rem; 
   }
 }
@@ -45,7 +45,7 @@
 @media (max-width: 768px) {
 
   .logoutButton {
-      padding: 10px 18px;
+      padding: 12px 24px;
       font-size: 1rem; 
   }
 }
